@@ -1,0 +1,45 @@
+
+/*************
+	Variables
+*/
+
+/* Colours */
+
+$white: #ffffff;
+$grey: #333333;
+$light-grey: #777777;
+$green: #33cc77;
+$dark-green: #4b9e62;
+$light-green: #7be299;
+
+$background-colour: $green;
+$heading-colour: $white;
+$paragraph-colour: $white;
+
+
+/* Margins */
+
+$sitemargin: 50px;
+
+
+/* Typography */
+
+/* Helvetica */
+
+$proxima-nova: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, san-serif;
+
+@mixin proxima-regular {
+	font-family: $proxima-nova;
+	font-weight: 400;
+}
+
+@mixin proxima-bold {
+	font-family: $proxima-nova;
+	font-weight: 700;
+}
+
+@mixin proxima-black {
+	font-family: $proxima-nova;
+	font-weight: 900;
+}
+

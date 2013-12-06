@@ -1,0 +1,61 @@
+
+header {
+	padding: 45px 20px 0;
+
+	.container {	
+		@include clearfix;
+		border-bottom: 1px solid rgba(51,51,51,0.3);
+		padding-bottom: 45px;
+	}
+	
+	h1 {
+		float: left;
+		margin: 0;
+		
+		a {
+			background: url('/img/jd.png') no-repeat;
+			display: block;
+			height: 50px;
+			text-indent: -9999px;
+			width: 86px;
+			@include transition (opacity 0.1s ease-out);
+			
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+	}
+	
+	nav {
+		float: right;
+		margin-top: 13px;
+		
+		li {
+			@include inline-block;
+			@include proxima-bold;
+			color: $light-green;
+			font-size: 0.875em;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+			margin-left: 20px;
+			
+			a {
+				border-bottom: 2px solid transparent;
+				box-shadow: 0 1px 0 rgba(0,0,0,0);
+				color: $white;
+				padding-bottom: 5px;
+			}
+			
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		
+		li a:hover,
+		li.current-page a {
+			border-bottom: 2px solid $white;
+			box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+		}
+	}
+}

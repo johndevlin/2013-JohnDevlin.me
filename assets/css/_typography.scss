@@ -1,0 +1,59 @@
+
+
+p {
+	color: $paragraph-colour;
+	@include proxima-regular;
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin: 0 0 1em;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+p a {
+	color: #008ed6;
+}
+
+.center {
+	
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $heading-colour;
+	margin: 0 0 1em;
+	padding: 0;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	@include proxima-bold;
+	font-size: 4.5em;
+	letter-spacing: 0.125em;
+	line-height: 1;
+	margin: 0 0 0.25em;
+	text-transform: uppercase;
+}
+
+h2 {
+	@include proxima-regular;
+	font-size: 2.25em;
+	line-height: 1;
+	margin: 0 0 0.25em;
+}
+
+h3 {
+	@include proxima-bold;
+	font-size: 1.875em;
+	line-height: 1.2;
+	margin: 0 0 0.25em;
+}
+
+h4 {
+	@include proxima-regular;
+	font-size: 1.5em;
+	line-height: 1.2;
+	margin: 0 0 0.25em;
+}

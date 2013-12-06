@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>John Devlin - Digital Designer based in Belfast, Northern Ireland - Home</title>
+	
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico"> 
+
+	<link rel='stylesheet' href='assets/css/style.css'>
+	
+	<script src='assets/js/libs/modernizr-2.6.2.min.js'></script>
+	
+	<!--[if lt IE 9]> 
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script> 
+	<![endif]-->
+	
+	<script type="text/javascript" src="//use.typekit.net/ptf0wxm.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	
+
+	
+	
+		<header>
+		<div class="container">
+			
+			<h1>
+				<a href="/">John Devlin: Digital Designer based in Belfast, Northern Ireland</a>
+			</h1>
+			
+			<p class="open-nav mobile">
+				Open navigation
+			</p>
+			
+			<nav>
+				<ul>
+					<li class="current-page"><a href="/">Home</a></li>
+					<li><a href="/about/">About</a></li>
+					<li>Writing</li>
+					<li><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	
+	<div id="main" class="home center">
+		<div class="container">
+			
+			<section class="hgroup">
+				
+				<h1 class="hello">
+					Hi
+				</h1>
+				
+				<h1>
+					I&#8217;m John
+				</h1>
+				
+				<h2>
+					I&#8217;m a <span class="striked">hired geek</span> digital designer living in Belfast, Northern Ireland.
+				</h2>
+				
+			</section>
+			
+			<p class="randomise">
+				<span>Randomise</span>
+			</p>
+			
+			<h3>
+				The fuck&#8217;s a digital designer?
+			</h3>
+			
+			<h4>
+				I design and build interactive, user friendly, responsive interfaces for screen.
+			</h4>
+			
+		</div>
+	</div>
+	
+		
+	<footer>
+		<div class="container">
+			
+			<p>
+				&copy; <span class="current-year">Year</span>
+			</p>
+			
+		</div>
+	</footer>
+
+	<script src='assets/js/libs/jquery-1.9.1.min.js'></script>
+<script src='assets/js/libs/jquery.debouncedresize-min.js'></script>
+<script src='assets/js/libs/jquery.fittext.js'></script>
+<script src='assets/js/scripts.js'></script>
+	<script type="application/x-javascript"> 
+		addEventListener("load", function() { 
+			setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); 
+		}
+	</script>
+
+	<script>
+		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>
